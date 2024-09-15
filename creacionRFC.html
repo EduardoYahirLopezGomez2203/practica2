@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion RFC</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Llena el formulario para crear el RFC</h1>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre" required minlength="5">
+
+            <label for="apellido-paterno">Apellido paterno</label>
+            <input type="text" id="apellido-paterno" placeholder="Ingresa tu apellido paterno" required>
+
+            <label for="apellido-materno">Apellido materno</label>
+            <input type="text" id="apellido-materno" placeholder="Ingresa tu apellido materno" required>
+
+            <label for="fecha-nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fecha-nacimiento" required>
+
+            <input type="button" value="Generar RFC" class="btn-generar" id="generarRFCBtn">
+            <label id="lbl-generacionRFC"></label>
+        </form>
+    </div>
+    <script src="jqueryCreacionRFC.js">
+    </script>
+</body>
+</html>
